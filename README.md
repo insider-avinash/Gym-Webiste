@@ -1,2 +1,2 @@
-# Gym-Webiste
+# Gym-Website
 Gym Website 
