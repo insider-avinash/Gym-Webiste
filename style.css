@@ -1,0 +1,234 @@
+/* CSS reset  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables     Never Used */
+:root {
+  --navbar-height: 59px;
+}
+/* Navigation Bar  */
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Logo And Image styling */
+#logo {
+  margin: -34px 24px;
+}
+#logo img {
+  height: 40px;
+  margin: 34px 45px;
+}
+
+/* List Styling  */
+#navbar {
+  position: relative;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 15px;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 489px;
+}
+
+#home::before {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+#home h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: bolder;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(124, 70, 70);
+  color: white;
+  margin: 17px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#home p {
+  color: #fff;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+/* Services Section */
+
+.h-primary-center {
+  text-align: center;
+  font-size: 34px;
+  margin-top: 130px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.h-secondary-center {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.h-primary-centre {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#service {
+  margin: 34px;
+  display: flex;
+}
+
+#service .box {
+  border: 2px solid brown;
+  padding: 6px;
+  margin: 6px;
+  border-radius: 23px;
+  background-color: rgb(165, 150, 150);
+}
+
+#service .box img {
+  height: 160px;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+#client-section {
+  height: 344px;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url(back.jpg);
+  width: 100%;
+  height: 60%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client img {
+  height: 300px;
+}
+
+.client-item {
+  padding: 34px;
+}
+
+/* Contact us Section */
+.heading {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 9px;
+  font-size: 16px;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 15px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#contact-box::before {
+  content: "";
+  position: absolute;
+  background: url(3.jpg);
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Footer Section */
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
